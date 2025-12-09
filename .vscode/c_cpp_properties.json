@@ -1,0 +1,70 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/alex-dukhno/Projects/GroundDrone/include",
+                "/Users/alex-dukhno/Projects/GroundDrone/src",
+                "/Users/alex-dukhno/Projects/GroundDrone/lib/LineTracker",
+                "/Users/alex-dukhno/Projects/GroundDrone/lib/ElectricEngine",
+                "/Users/alex-dukhno/Projects/GroundDrone/lib/UltrasonicSensor",
+                "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/TaskScheduler/src",
+                "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/Servo/src",
+                "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/MAVLink",
+                "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/FreeRTOS/src",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/variants/standard",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/alex-dukhno/Projects/GroundDrone/include",
+                    "/Users/alex-dukhno/Projects/GroundDrone/src",
+                    "/Users/alex-dukhno/Projects/GroundDrone/lib/LineTracker",
+                    "/Users/alex-dukhno/Projects/GroundDrone/lib/ElectricEngine",
+                    "/Users/alex-dukhno/Projects/GroundDrone/lib/UltrasonicSensor",
+                    "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/TaskScheduler/src",
+                    "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/Servo/src",
+                    "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/MAVLink",
+                    "/Users/alex-dukhno/Projects/GroundDrone/.pio/libdeps/uno/FreeRTOS/src",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/variants/standard",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/Users/alex-dukhno/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "ARDUINO_AVR_UNO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/Users/alex-dukhno/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
