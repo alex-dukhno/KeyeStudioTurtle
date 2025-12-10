@@ -1,5 +1,5 @@
-#ifndef MOTOR_H
-#define MOTOR_H
+#ifndef HAL_MOTOR_H
+#define HAL_MOTOR_H
 
 class HalMotor {
   public:
@@ -8,4 +8,4 @@ class HalMotor {
     virtual bool setSpeed(float speed) = 0;
 };
 
-#endif //MOTOR_H
+#endif //HAL_MOTOR_H

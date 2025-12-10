@@ -1,5 +1,5 @@
-#ifndef HEAD_H
-#define HEAD_H
+#ifndef HAL_HEAD_H
+#define HAL_HEAD_H
 
 class HalHead {
   public:
@@ -8,4 +8,4 @@ class HalHead {
     virtual bool turn(float angle) = 0;
 };
 
-#endif //HEAD_H
+#endif //HAL_HEAD_H

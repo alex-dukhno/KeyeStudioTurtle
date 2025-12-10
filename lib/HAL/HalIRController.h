@@ -1,5 +1,5 @@
-#ifndef IR_CONTROLLER_H
-#define IR_CONTROLLER_H
+#ifndef HAL_IR_CONTROLLER_H
+#define HAL_IR_CONTROLLER_H
 
 enum Buttons {
   UP = 0,
@@ -30,4 +30,4 @@ class HalInfraredController {
     virtual Buttons* buttonClicked() = 0;
 };
 
-#endif //IR_CONTROLLER_H
+#endif //HAL_IR_CONTROLLER_H

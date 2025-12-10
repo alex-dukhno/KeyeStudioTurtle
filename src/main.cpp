@@ -1,9 +1,6 @@
 #include <Arduino.h>
 
-#include <Arduino_FreeRTOS.h>
-#include <semphr.h>
-
-SemaphoreHandle_t xSerialSemaphore = xSemaphoreCreateMutex();
+#include "HalMatrix.h"
 
 int pos = 0;
 
@@ -16,17 +13,21 @@ void TaskInfraRedControl(void *pvParameters);
 
 constexpr int LED_PIN = 9;
 
+MatrixDisplay matrix_display;
+
 void setup() {
   Serial.begin(9600);
 
-  xTaskCreate(
-    TaskInfraRedControl,
-    "InfraRedControl",
-    128,
-    nullptr,
-    1,
-    nullptr
-  );
+  matrix_display.begin();
+
+  // xTaskCreate(
+  //   TaskInfraRedControl,
+  //   "InfraRedControl",
+  //   128,
+  //   nullptr,
+  //   1,
+  //   nullptr
+  // );
 }
 
 // xTaskCreate(
@@ -75,4 +76,6 @@ void setup() {
 // );
 
 void loop() {
+  matrix_display.showSmile();
+  delay(1000);
 }

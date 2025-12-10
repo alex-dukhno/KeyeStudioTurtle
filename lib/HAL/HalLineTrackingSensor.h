@@ -1,5 +1,5 @@
-#ifndef LINE_TRACKING_SENSOR_H
-#define LINE_TRACKING_SENSOR_H
+#ifndef HAL_LINE_TRACKING_SENSOR_H
+#define HAL_LINE_TRACKING_SENSOR_H
 
 class HalLineTrackingSensor {
   public:
@@ -10,4 +10,4 @@ class HalLineTrackingSensor {
     virtual int readRight() = 0;
 };
 
-#endif //LINE_TRACKING_SENSOR_H
+#endif //HAL_LINE_TRACKING_SENSOR_H

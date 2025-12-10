@@ -1,5 +1,5 @@
-#ifndef DISTANCE_SENSOR_H
-#define DISTANCE_SENSOR_H
+#ifndef HAL_DISTANCE_SENSOR_H
+#define HAL_DISTANCE_SENSOR_H
 
 class HalDistanceSensor {
   public:
@@ -8,4 +8,4 @@ class HalDistanceSensor {
     virtual double readDistance() = 0;
 };
 
-#endif //DISTANCE_SENSOR_H
+#endif //HAL_DISTANCE_SENSOR_H
