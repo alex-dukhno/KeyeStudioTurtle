@@ -5,10 +5,17 @@
 #include <Arduino.h>
 
 
-class TCRT5000Sensor final: HalLineTrackingSensor {
+class TCRT5000Sensor final: public HalLineTrackingSensor {
+  private:
+    int leftPin;
+    int middlePin;
+    int rightPin;
+
   public:
-    TCRT5000Sensor(const int leftPin, const int middlePin, const int rightPin)
-      : HalLineTrackingSensor(leftPin, middlePin, rightPin) {
+    TCRT5000Sensor(const int leftPin, const int middlePin, const int rightPin) {
+      this->leftPin = leftPin;
+      this->middlePin = middlePin;
+      this->rightPin = rightPin;
     }
 
     int readLeft() override {

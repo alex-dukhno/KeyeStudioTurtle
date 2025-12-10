@@ -4,12 +4,14 @@
 #include "HalHead.h"
 #include <Servo.h>
 
-class ServoHead final: HalHead {
+class ServoHead final: public HalHead {
   private:
+    int pin;
     Servo servo;
 
   public:
-    explicit ServoHead(const int pin) : HalHead(pin) {
+    explicit ServoHead(const int pin) {
+      this->pin = pin;
       this->servo = Servo();
     }
 

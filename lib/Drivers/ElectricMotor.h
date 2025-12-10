@@ -4,9 +4,16 @@
 #include "HalMotor.h"
 #include <Arduino.h>
 
-class ElectricMotor final: HalMotor {
+class ElectricMotor final: public HalMotor {
+  private:
+    int controlPin;
+    int pwmPin;
+
   public:
-    ElectricMotor(const int controlPin, const int pwmPin) : HalMotor(controlPin, pwmPin) {}
+    ElectricMotor(const int controlPin, const int pwmPin) {
+      this->controlPin = controlPin;
+      this->pwmPin = pwmPin;
+    }
 
     bool setSpeed(float speed) override {
       return true;

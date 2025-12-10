@@ -3,8 +3,6 @@
 
 class HalMotor {
   public:
-    HalMotor(int controlPin, int pwmPin);
-
     virtual ~HalMotor() = default;
 
     virtual bool setSpeed(float speed) = 0;

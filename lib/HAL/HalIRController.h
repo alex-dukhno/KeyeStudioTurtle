@@ -24,14 +24,7 @@ enum Buttons {
 };
 
 class HalInfraredController {
-  protected:
-    int recvPin;
-
   public:
-    explicit HalInfraredController(const int recvPin) {
-      this->recvPin = recvPin;
-    }
-
     virtual ~HalInfraredController() = default;
 
     virtual Buttons* buttonClicked() = 0;

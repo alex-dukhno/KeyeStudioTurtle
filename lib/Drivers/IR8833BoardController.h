@@ -33,9 +33,13 @@ Code CODES[] = {
   {DIEZ, 0xB54AFF00},
 };
 
-class IR8833BoardController final : HalInfraredController {
+class IR8833BoardController final : public HalInfraredController {
+  private:
+    int recvPin;
+
   public:
-    explicit IR8833BoardController(const int recvPin) : HalInfraredController(recvPin) {
+    explicit IR8833BoardController(const int recvPin) {
+      this->recvPin = recvPin;
     }
 
     // void InfraRedControl::init() const {

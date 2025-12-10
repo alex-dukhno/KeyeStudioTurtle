@@ -5,10 +5,15 @@
 
 #include <Arduino.h>
 
-class HCSR04UltrasonicSensor final: HalDistanceSensor {
+class HCSR04UltrasonicSensor final: public HalDistanceSensor {
+  private:
+    int triggerPin;
+    int echoPin;
+
   public:
-    HCSR04UltrasonicSensor(const int triggerPin, const int echoPin)
-      : HalDistanceSensor(triggerPin, echoPin) {
+    HCSR04UltrasonicSensor(const int triggerPin, const int echoPin) {
+      this->triggerPin = triggerPin;
+      this->echoPin = echoPin;
     }
 
     double readDistance() override {
